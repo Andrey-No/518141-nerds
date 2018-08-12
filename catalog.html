@@ -9,12 +9,12 @@
   <header class="menu-header">
   <nav class="menu-navigator">
   <div class="menu-header-logo">
-  <img src="img/logo.jpg" width="450" height="340" alt="Логотип веб-студия Нёрдс">
+    <a href="index.html"><img src="img/logo.jpg" width="450" height="340" alt="Логотип веб-студия Нёрдс"></a>
   </div>
   <ul class="site-navigation">
     <li><a href="#">Студия</a></li>
     <li><a href="#">Клиенты</a></li>
-    <li><a href="#">Магазин</a></li>
+    <li class="site-navigation-current"><a href="#">Магазин</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
   <ul>
@@ -55,7 +55,77 @@
       <li>Корзина</li>
     </ul>
   </section>
-  <p span="button-reveal">Показать</p>
+  <p class="button-reveal">Показать</p>
+  <section>
+    <h2 class="visually-hidden">Каталог работ</h2>
+    <div class="portfolio-catalog">
+    <div class="portfolio-filter">
+      <!--Фильтр по портфолио -->
+      <ul>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По функционалу</li>
+      </ul>
+    </div>
+    </div>
+    <ul class="catalog">
+      <li><h3 class="visually-hidden">Сайт "Авиатор"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Авиатор"></a></li>
+      <li><h3 class="visually-hidden">Сайт "Sunset"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Sunset"></a></li>
+      <li><h3 class="visually-hidden">Сайт "Forte"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Forte"></a></li>
+      <li><h3 class="visually-hidden">Сайт "Marquee"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Marquee"></a></li>
+      <li><h3 class="visually-hidden">Сайт "Avenue"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Avenue"></a></li>
+      <li><h3 class="visually-hidden">Сайт "Dovetail"</h3>
+      <a href="#"><img src="img/aviator.jpg" alt="Dovetail"></a></li>
+    </ul>
+    <ul class="paginator-list">
+      <li class="paginator-item paginator-item-current">1</li>
+      <li class="paginator-item"><a href="#">2</a></li>
+      <li class="paginator-item">3</li>
+      <li class="paginator-item">Следующая</li>
+    </ul>
+  </section>
+  <footer>
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="map">
+      <span class="map">X</span>
+      </div>
+      <div class="contacts">
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p>191186, Санкт-Петербург,<br> 
+         ул. Б. Конюшенная, д 19/8<br>
+      </p>
+      <p>
+        тел. +7 (812) 275-75-75
+      </p>
+        <input class="write-to us-button" type="button" value="Напишите нам">
+      </div>
+      <div class="social-link">
+      <ul>
+      <li><a href="#" class="social social-vk">Вконтакте</a></li>
+      <li><a href="#" class="social social-fb">Facebook</a></li>
+      <li><a href="#" class="social social-inst">Instagram</a></li>
+      </ul>
+      </div>
+      <p>
+        <span class="footer-lead"><b>Давайте дружить, это выгодно!</b></span>
+      Скидка 10% для друзей из социальных сетей.
+      </p>
+    </footer>
+  <section>
+    <div class="modal modal-write-to-us">
+    <h2>Напишите нам</h2>
+    <p>Ваше имя</p>
+    <p>Ваш e-mail</p>
+    <p>Текст письма</p>
+    <!-- место для формы -->
+    <span class="modal-close">X</span>
+    </div>
+    </section>
 </main>  
 </body>
 </html>
