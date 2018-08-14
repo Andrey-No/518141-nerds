@@ -25,15 +25,17 @@
 </div>
 <main>
   <section>
-  <h1>Добро пожаловать<br>в магазин готовых макетов</h1>
+    <h1>Добро пожаловать в магазин готовых макетов</h1>
   </section>
-  <section>
-    <h2 class="visually-hidden">Фильтр стоимость</h2>
-    <b class="filter-value">Стоимость</b>
+  <section class="content">
+    <section class="sidebar">
+    <section>
+      <h2 class="visually-hidden">Фильтр стоимость</h2>
+      <b class="filter-value">Стоимость</b>
     <!-- Здесь будет фильтр по цене -->
-    <p>ОТ</p><p>ДО</p>
-  </section>
-  <section>
+      <p>ОТ</p><p>ДО</p>
+    </section>
+    <section>
     <h2 class="visually-hidden">Фильтр по типу сеток</h2>
     <b class="filter-value">Сетка</b>
     <!-- Здесь будет форма по сеткам -->
@@ -42,8 +44,8 @@
       <li>Фиксированная</li>
       <li>Резиновая</li>
     </ul>
-  </section>
-   <section>
+    </section>
+    <section>
     <h2 class="visually-hidden">Фильтр - особенности</h2>
     <b class="filter-value">Особенности</b>
     <!-- Здесь будет форма по сеткам -->
@@ -56,39 +58,73 @@
     </ul>
   </section>
   <p class="button-reveal">Показать</p>
-  <section>
+  </section>
+  <section class="catalog-web">
     <h2 class="visually-hidden">Каталог работ</h2>
-    <div class="portfolio-catalog">
-    <div class="portfolio-filter">
+    <nav class="portfolio-filter">
       <!--Фильтр по портфолио -->
       <ul>
         <li>По цене</li>
         <li>По типу</li>
         <li>По функционалу</li>
       </ul>
-    </div>
-    </div>
-    <ul class="catalog">
-      <li><h3 class="visually-hidden">Сайт "Авиатор"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Авиатор"></a></li>
-      <li><h3 class="visually-hidden">Сайт "Sunset"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Sunset"></a></li>
-      <li><h3 class="visually-hidden">Сайт "Forte"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Forte"></a></li>
-      <li><h3 class="visually-hidden">Сайт "Marquee"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Marquee"></a></li>
-      <li><h3 class="visually-hidden">Сайт "Avenue"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Avenue"></a></li>
-      <li><h3 class="visually-hidden">Сайт "Dovetail"</h3>
-      <a href="#"><img src="img/aviator.jpg" alt="Dovetail"></a></li>
-    </ul>
+    </nav>
+    <ul class="catalog-items">
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/aviator.jpg" alt="Авиатор"></a></main>
+          <footer class="modal-window"></footer>
+        </article>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/sunset.jpg" alt="Sunset"></a></main>
+          <footer class="modal-window">
+            <h3 class="card">Sunset</h3>
+            <p>Интернет магазин с личным кабинетом</p>
+            <a href="#">10000 р.</a>
+          </footer>
+        </article>
+      </li>    
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/forte.jpg" alt="Forte"></a></main>
+          <footer class="modal-window"></footer>
+        </article>
+      </li>     
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/marque.jpg" alt="Marque"></a></main>
+          <footer class="modal-window"></footer>
+        </article>
+      </li>     
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/avenue.jpg" alt="Avenue"></a></main>
+          <footer class="modal-window"></footer>
+        </article>
+      </li>     
+      <li class="catalog-item">
+        <article>
+          <header class="top-card"></header>
+          <main class="content-card"><a href="#"><img src="img/dovetail.jpg" alt="Dovetail"></a></main>
+          <footer class="modal-window"></footer>
+        </article>
+      </li>
     <ul class="paginator-list">
       <li class="paginator-item paginator-item-current">1</li>
       <li class="paginator-item"><a href="#">2</a></li>
       <li class="paginator-item">3</li>
       <li class="paginator-item">Следующая</li>
     </ul>
+    </ul>
   </section>
+  
   <footer>
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map">
