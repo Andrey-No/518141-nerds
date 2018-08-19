@@ -41,21 +41,36 @@
       <b class="filter-value">Сетка</b>
     <!-- Здесь будет форма по сеткам -->
       <ul>
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
+        <label>
+          <li><input type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</li>
+        </label>
+        <label>
+          <li><input type="radio" name="grid" value="grid-fixed">Фиксированная</li>
+        </label>
+        <label>
+          <li><input type="radio" name="grid" value="grid-rubber">Резиновая</li>
+        </label>
       </ul>
       </form>
     <form class="filter-features">
       <h2 class="visually-hidden">Фильтр - особенности</h2>
       <b class="filter-value">Особенности</b>
-      <!-- Здесь будет форма по сеткам -->
       <ul>
-        <li>Слайдер</li>
-        <li>Блок преимуществ</li>
-        <li>Новости</li>
-        <li>Галерея</li>
-        <li>Корзина</li>
+        <label>
+          <li><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</li>
+        </label>
+        <label>
+          <li><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</li>
+        </label>
+        <label>
+          <li><input type="checkbox" name="news" id="news-field" checked>Новости</li>
+        </label>
+        <label>
+          <li><input type="checkbox" name="gallery" id="gallery-field">Галерея</li>
+        </label>
+        <label>
+          <li><input type="checkbox" name="cart" id="cart-field">Корзина</li>
+        </label>
       </ul>
   </form>
   <p class="button-reveal">Показать</p>
@@ -160,13 +175,12 @@
     <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
       <label for="name-field"><p>Ваше имя</p></label>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required >
       <label for="email-field"><p>Ваш e-mail</p></label>
-      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" required>
       <label for="text-field"><p>Текст письма:</p></label>
       <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea><br>
       <input type="submit" value="Отправить">
-      <span class="modal-close">X</span>
       <span class="modal-close">X</span>
     </form>
   </section>
