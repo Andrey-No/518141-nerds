@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Веб-студия "Нёрдс"</title>
   </head>
 <body>
   <header class="menu-header">
     <nav class="menu-navigator">
       <div class="menu-header-logo">
-        <img src="img/logo.jpg" width="450" height="340" alt="Логотип веб-студия Нёрдс">
+        <img src="img/logo.svg" width="160" height="65" alt="Логотип веб-студия Нёрдс">
       </div>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
@@ -17,7 +17,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul>
-        <li class="login">Вход</li>
+        <a href="#"><li class="cart">Корзина</li></a>
       </ul>
     </nav>
   </header>  
@@ -120,12 +120,15 @@
       </ul>
     </section>
   <section class="modal-window">
-    <form class="modal modal-write-to-us">
+    <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
-      <p>Ваше имя</p>
-      <p>Ваш e-mail</p>
-      <p>Текст письма</p>
-    <!-- место для формы -->
+      <label for="name-field"><p>Ваше имя</p></label>
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      <label for="email-field"><p>Ваш e-mail</p></label>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <label for="text-field"><p>Текст письма:</p></label>
+      <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea><br>
+      <input type="submit" value="Отправить">
       <span class="modal-close">X</span>
     </form>
   </section>
@@ -134,6 +137,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map">
         <span class="map">X</span>
+        <img src="img/map.jpg" width="1440" height="415">
       </div>
       <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
