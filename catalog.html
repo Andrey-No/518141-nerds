@@ -75,8 +75,8 @@
         <img src="img/aviator.jpg" alt="Сайт Авиатор">
         <div class="info-block">
           <a href="#"><h3>Aviator</h3></a>
-          <p>Интетнет магазин с личным кабнетом</p>
-          <a class="buy">10000 р.</a>
+          <p>Одностраничный макет с авторским дизайном</p>
+          <a class="buy">8000 р.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -132,7 +132,7 @@
 <footer>
   <h2 class="visually-hidden">Как нас найти</h2>
   <div class="map">
-    <span class="map">X</span>
+    <img src="img/map.jpg" width="1200" height="415" alt="Находимся по адресу: Санкт-Петербург, ул. Б. Конюшенная, д 19/8">
   </div>
   <div class="contacts">
     <h3>NЁRDS DESIGN STUDIO</h3>
@@ -157,12 +157,16 @@
       </p>
     </footer>
   <section class="modal-window">
-    <form class="modal modal-write-to-us">
+    <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
-      <p>Ваше имя</p>
-      <p>Ваш e-mail</p>
-      <p>Текст письма</p>
-    <!-- место для формы -->
+      <label for="name-field"><p>Ваше имя</p></label>
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      <label for="email-field"><p>Ваш e-mail</p></label>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <label for="text-field"><p>Текст письма:</p></label>
+      <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea><br>
+      <input type="submit" value="Отправить">
+      <span class="modal-close">X</span>
       <span class="modal-close">X</span>
     </form>
   </section>
