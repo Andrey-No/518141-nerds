@@ -30,34 +30,36 @@
   <section class="content">
     <h2 class="visually-hidden">Содержание страницы</h2>
     <section class="sidebar">
-      <form class="price-tag">
-      <h2 class="visually-hidden">Фильтр стоимость</h2>
-      <b class="filter-value">Стоимость</b>
+     <form class="type-of-grids" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="filter-value">Стоимость</legend>
+          <h2 class="visually-hidden">Фильтр стоимость</h2>
     <!-- Здесь будет фильтр по цене -->
-      <p>ОТ<input type="number" min="0" max="15000" step="500"></p><p>ДО<input type="number" min="0" max="15000" step="500"></p>
-      </form>
-      <form class="type-of-grids" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="visually-hidden">Фильтр по типу сеток</h2>
-      <b class="filter-value">Сетка</b>
+          <p>ОТ<input type="number" min="0" max="15000" step="500"></p><p>ДО<input type="number" min="0" max="15000" step="500"></p>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-value">Сетка</legend>
+          <h2 class="visually-hidden">Фильтр по типу сеток</h2>
     <!-- Здесь будет форма по сеткам -->
-      <ul>
-          <li><label><input type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
-          <li><label><input type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
-          <li><label><input type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
-      </ul>
-      </form>
-    <form class="filter-features" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="visually-hidden">Фильтр - особенности</h2>
-      <b class="filter-value">Особенности</b>
-      <ul>
-          <li><label><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</label></li>
-          <li><label><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</label></li>
-          <li><label><input type="checkbox" name="news" id="news-field" checked>Новости</label></li>
-          <li><label><input type="checkbox" name="gallery" id="gallery-field">Галерея</label></li>
-          <li><label><input type="checkbox" name="cart" id="cart-field">Корзина</label></li>
-      </ul>
-      <input class="button-reveal" type="submit" value="Показать">
-  </form>
+          <ul>
+            <li><label><input type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
+            <li><label><input type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
+            <li><label><input type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-value">Особенности</legend>
+          <h2 class="visually-hidden">Фильтр - особенности</h2>
+          <ul>
+            <li><label><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</label></li>
+            <li><label><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</label></li>
+            <li><label><input type="checkbox" name="news" id="news-field" checked>Новости</label></li>
+            <li><label><input type="checkbox" name="gallery" id="gallery-field">Галерея</label></li>
+            <li><label><input type="checkbox" name="cart" id="cart-field">Корзина</label></li>
+          </ul>
+        <input class="button-reveal" type="submit" value="Показать">
+        </fieldset>
+    </form>
   </section>
   <section class="catalog-web">
     <h2 class="visually-hidden">Каталог работ</h2>
