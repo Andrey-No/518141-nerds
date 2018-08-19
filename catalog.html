@@ -18,7 +18,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul>
-        <a href="#"><li class="shopping-cart">Корзина</li></a>
+        <li class="shopping-cart"><a href="#">Корзина</a></li>
       </ul>
     </nav>
   </header>
@@ -34,46 +34,30 @@
       <h2 class="visually-hidden">Фильтр стоимость</h2>
       <b class="filter-value">Стоимость</b>
     <!-- Здесь будет фильтр по цене -->
-      <p>ОТ</p><p>ДО</p>
+      <p>ОТ<input type="number" min="0" max="15000" step="500"></p><p>ДО<input type="number" min="0" max="15000" step="500"></p>
       </form>
-      <form class="type-of-grids">
+      <form class="type-of-grids" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Фильтр по типу сеток</h2>
       <b class="filter-value">Сетка</b>
     <!-- Здесь будет форма по сеткам -->
       <ul>
-        <label>
-          <li><input type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</li>
-        </label>
-        <label>
-          <li><input type="radio" name="grid" value="grid-fixed">Фиксированная</li>
-        </label>
-        <label>
-          <li><input type="radio" name="grid" value="grid-rubber">Резиновая</li>
-        </label>
+          <li><label><input type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
+          <li><label><input type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
+          <li><label><input type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
       </ul>
       </form>
-    <form class="filter-features">
+    <form class="filter-features" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Фильтр - особенности</h2>
       <b class="filter-value">Особенности</b>
       <ul>
-        <label>
-          <li><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</li>
-        </label>
-        <label>
-          <li><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</li>
-        </label>
-        <label>
-          <li><input type="checkbox" name="news" id="news-field" checked>Новости</li>
-        </label>
-        <label>
-          <li><input type="checkbox" name="gallery" id="gallery-field">Галерея</li>
-        </label>
-        <label>
-          <li><input type="checkbox" name="cart" id="cart-field">Корзина</li>
-        </label>
+          <li><label><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</label></li>
+          <li><label><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</label></li>
+          <li><label><input type="checkbox" name="news" id="news-field" checked>Новости</label></li>
+          <li><label><input type="checkbox" name="gallery" id="gallery-field">Галерея</label></li>
+          <li><label><input type="checkbox" name="cart" id="cart-field">Корзина</label></li>
       </ul>
+      <input class="button-reveal" type="submit" value="Показать">
   </form>
-  <p class="button-reveal">Показать</p>
   </section>
   <section class="catalog-web">
     <h2 class="visually-hidden">Каталог работ</h2>
@@ -138,8 +122,8 @@
     <ul class="paginator-list">
       <li class="paginator-item paginator-item-current">1</li>
       <li class="paginator-item"><a href="#">2</a></li>
-      <li class="paginator-item">3</li>
-      <li class="paginator-item-next">Следующая</li>
+      <li class="paginator-item"><a href="#">3</a></li>
+      <li class="paginator-item-next"><a href="#">Следующая</a></li>
     </ul>
   </section>
 </section>
@@ -174,11 +158,11 @@
   <section class="modal-window">
     <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
-      <label for="name-field"><p>Ваше имя</p></label>
+      <p><label for="name-field">Ваше имя</label></p>
       <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required >
-      <label for="email-field"><p>Ваш e-mail</p></label>
+      <p><label for="email-field">Ваш e-mail</label></p>
       <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" required>
-      <label for="text-field"><p>Текст письма:</p></label>
+      <p><label for="text-field">Текст письма:</label></p>
       <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea><br>
       <input type="submit" value="Отправить">
       <span class="modal-close">X</span>
