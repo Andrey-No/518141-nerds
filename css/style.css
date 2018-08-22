@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-navigator {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.site-navigation  {
+  list-style: none;
+}
+.cart {
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus {
+  color: #fb565a;
+}
+
+.cart a:hover {
+  color: #fb565a;
+}
+
+.cart a:focus {
+  color: #fb565a;
+}
+
+.advantages {
+  background-color: white;
+  
+}
+
+.advantages li{
+  list-style: none;
+}
+
+.advantages h3 {
+   font-size: 24px;
+   text-transform: uppercase;
+}
+
+advantages-item h3{
+  text-align: center;
+}
+
+.about-us-promo h3 {
+  font-size: 45px;
+}
+
+.about-us-promo li {
+  list-style: none;
+  line-height: 24px;
+}
+
+.about-us-promo b {
+  text-transform: uppercase;
+}
+
+.about-us-statistics b {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: bold;
+}
+
+.about-us-statistics .number {
+  font-size: 45px;
+  font-style: bold;
+}
