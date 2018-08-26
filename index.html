@@ -126,11 +126,11 @@
     <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
       <p><label for="name-field">Ваше имя</label></p>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required>
+      <input type="text" class="form-name" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required>
       <p><label for="email-field">Ваш e-mail</label></p>
       <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" required>
       <p><label for="text-field">Текст письма:</label></p>
-      <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea><br>
+      <textarea class="textarea" name="text" id="text-field" placeholder="В свободной форме" rows="7" cols="76"></textarea><br>
       <input type="submit" value="Отправить">
       <span class="modal-close">X</span>
     </form>
@@ -159,7 +159,7 @@
       </ul>
       <p class="footer-lead">
         <b>Давайте дружить, это выгодно!</b>
-        <span >Скидка 10% для друзей из социальных сетей.</span>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </p>
     </footer>
   </body>
