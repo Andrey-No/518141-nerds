@@ -339,3 +339,107 @@ input[type="button"] {
   background-color: #e1e1e1;
 }
 
+<!--catalog-->
+
+.menu-catalog {
+  display: block;
+  margin-bottom: 0px;
+  
+}
+
+.page-title {
+  display: block;
+  margin-top: 0px;
+  width: 1200px;
+  height: 240px;
+  background-color: #eeeeee;
+  
+}
+
+
+
+.page-title h1{
+  font-size: 55px;
+  text-align: center;
+  vertical-align: inherit;
+  background-color: #eeeeee;
+}
+
+.type-of-grids {
+  width: 260px;
+  height: 780px;
+}
+
+.type-of-grids legend {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+}
+
+.filter-value li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #797c7f;
+}
+
+.button-reveal {
+  background-color: #eeeeee; 
+}
+
+.catalog-items {
+  list-style: none;
+  width: 760px;
+  height: 1920px;
+}
+
+.catalog-items li img {
+  width: 360px;
+  height: 620px;
+}
+
+.info-block {
+  display: block;
+  width: 360px;
+  height: 230px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 35px;
+}
+
+
+.catalog-items li h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.catalog-item p {
+  margin-left: auto;
+  margin-right: auto;
+  color: #666666;
+  width: 180px;
+  height: 35px;
+}
+
+.buy {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  width: 200px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.buy a {
+  display: inline;
+}
