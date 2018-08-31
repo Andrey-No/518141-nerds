@@ -6,13 +6,14 @@
     <link href = "https://fonts.googleapis.com/css?family= Roboto: 400,700 & amp; subset = cyrillic" rel = "stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
 <body>
 <div class="menu-catalog">
   <header class="menu-header">
     <nav class="menu-navigator">
       <div class="menu-header-logo">
-        <a href="index.html"><img src="img/logo.svg" width="140" height="55" alt="Логотип веб-студия Нёрдс"></a>
+        <a href="index.html"><img src="img/logo.svg" class="logo-svg" width="160" height="65" alt="Логотип веб-студия Нёрдс"></a>
       </div>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
@@ -38,7 +39,7 @@
           <legend class="filter-value">Стоимость</legend>
           <h2 class="visually-hidden">Фильтр стоимость</h2>
     <!-- Здесь будет фильтр по цене -->
-          <label>ОТ<input type="number" min="0" max="15000" step="500"></label><label>ДО<input type="number" min="0" max="15000" step="500"></label>
+          <label ><span class="from-to-price">ОТ</span><input type="number" min="0" max="15000" step="500"></label><label><span class="from-to-price">ДО</span><input type="number" min="0" max="15000" step="500"></label>
         </fieldset>
         <fieldset>
           <legend class="filter-value">Сетка</legend>

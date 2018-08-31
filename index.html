@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-студия "Нёрдс"</title>
-    <link href = "https://fonts.googleapis.com/css?family= Roboto: 400,700 & amp; subset = cyrillic" rel = "stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
 <body>
   <header class="menu-header">
@@ -28,6 +28,14 @@
     <section class="slider">
       <div class="container">
         <h2 class="visually-hidden">Слайдер Нёрдс</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
         <div class="slider-controls">
           <i class="active"></i>
           <i></i>
@@ -57,19 +65,19 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li class="advantages-item web">
-         <img src="img/comp.jpg" alt="Веб-сайты">
+         <img src="img/comp.jpg" class="advantages-web" alt="Веб-сайты">
          <h3>Веб-сайты</h3>
          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
          <a href="#" class="red" >Заказать</a>
         </li>
        <li class="advantages-item applications">
-         <img src="img/item-applications.jpg" alt="Приложения">
+         <img src="img/item-applications.jpg" class="advantages-applications" alt="Приложения">
          <h3>Приложения</h3>
          <p>Покорите топ-10 приложений в AppStore и Google Play.</p>
          <a href="#" class="green">Заказать</a>
        </li>
        <li class="advantages-item presentations">
-         <img src="img/item-presentations.jpg" alt="Презентации">
+         <img src="img/item-presentations.jpg" class="advantages-presentations" alt="Презентации">
          <h3>Презентации</h3>
          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
          <a href="#" class="yellow">Заказать</a>
@@ -92,10 +100,10 @@
       </div>  
       <div class="about-us-statistics">
         <div class="about-us-nerd-image">
-          <img src="img/nerd-image.jpg" alt="Нёрдс">
+          <img src="img/nerd-image.jpg" class="nerd-img" alt="Нёрдс">
         </div>
         <b>с 2004 года Любим точность во всем:</b>
-        <table>
+        <table class="promo-table">
           <tr class="number">
             <td>
               146%
@@ -124,20 +132,20 @@
     <section class="partners">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="link-partners">
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.png" alt="HTML Academy"></a></li>
-        <li><a href="#"><img src="img/barberhop.png" alt="Barbershop Borodynski"></a></li>
-        <li><a href="#"><img src="img/pink.png" alt="Pink"></a></li>
-        <li><a href="#"><img src="img/mishka.png" alt="Mishka"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-img" src="img/html-academy.png" alt="HTML Academy"></a></li>
+        <li><a href="#"><img class="barberhop-img" src="img/barberhop.png" alt="Barbershop Borodynski"></a></li>
+        <li><a href="#"><img class="pink-img" src="img/pink.png" alt="Pink"></a></li>
+        <li><a href="#"><img class="mishka-img" src="img/mishka.png" alt="Mishka"></a></li>
       </ul>
     </section>
   <section class="modal-window">
     <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
-      <p><label for="name-field">Ваше имя</label></p>
+      <p><label class="popap-label" for="name-field">Ваше имя</label></p>
       <input type="text" class="form-name" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on" required>
-      <p><label for="email-field">Ваш e-mail</label></p>
+      <p><label  class="popap-label" for="email-field">Ваш e-mail</label></p>
       <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" required>
-      <p><label for="text-field">Текст письма:</label></p>
+      <p><label  class="popap-label" for="text-field">Текст письма:</label></p>
       <textarea class="textarea" name="text" id="text-field" placeholder="В свободной форме" rows="7" cols="76"></textarea><br>
       <input type="submit" value="Отправить">
       <span class="modal-close">X</span>
@@ -148,7 +156,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map">
         <span class="map">X</span>
-        <img src="img/map.jpg" width="1440" height="415" alt="">
+        <img src="img/map.jpg" class="map-img" width="1280" height="415" alt="Карта">
       </div>
       <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>

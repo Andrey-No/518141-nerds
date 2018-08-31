@@ -1,19 +1,13 @@
-@font-face {
-font-family: "Roboto"; 
-src: url("/fonts/web/roboto") format("woff2"); 
-font-style: normal; 
-font-weight: normal; 
-} 
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .button {
@@ -45,7 +39,6 @@ body {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -70,7 +63,7 @@ body {
 }
 
 .slider-item:nth-child(1) {
- background-image: url("/img/slide.png");
+  background-image: url("/img/slide.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
@@ -113,7 +106,6 @@ body {
   margin-bottom: 38px;
 }
 
-
 .slider-controls i {
   position: relative;
   display: inline-block;
@@ -122,14 +114,12 @@ body {
   border-radius: 50%;
   cursor: pointer;
   padding: 8px;
-  
 }
 
 .slider-controls i::after {
   content: "";
   width: 18px;
   height: 18px;
-  
   background: #ffffff;
   position: absolute;
   top: 8px;
@@ -143,10 +133,8 @@ body {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-  
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -154,16 +142,13 @@ body {
 
 .slider-controls .active::before {
    content: "";
-  
   position: absolute;
   left: 50%;
   top: 50%;
   z-index: 2;
-  
   width: 4px;
   height: 4px;
   margin: -4px;
-  
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
@@ -179,11 +164,13 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #eeeeee;
+  line-height: 30px;
 }
 
 .site-navigation  {
   list-style: none;
 }
+
 .cart {
   list-style: none;
 }
@@ -213,21 +200,48 @@ a {
   list-style: none;
 }
 
+.advantages-web {
+  width: 136px;
+  height: 80px;
+}
+
+.advantages-applications {
+  width: 300px;
+  height: 146px;
+}
+
+.advantages-presentations {
+  width: 300px;
+  height: 146px;
+}
+
 .advantages h3 {
-font-size: 18px;
+font-size: 24px;
 text-transform: uppercase;
+line-height: 30px;
+font-weight: 700;
 }
 
 .advantages p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   width: 240px;
+  line-height: 24px;
 }
 
 .about-us-promo h3 {
-  font-size: 45px;
   width: 660px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
   margin-bottom: 20px;
+  
+}
+
+.about-us-nerd-image {
+  width: 360px;
+  height: 208px;
+  
 }
 
 .about-us-text {
@@ -235,18 +249,23 @@ text-transform: uppercase;
   font-weight: 400;
   width: 660px;
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 .about-us-promo li {
   list-style: none;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 400;
-  
+  font-size: 16px;
 }
 
 .about-us-promo b {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  
 }
 
 .about-us-statistics b {
@@ -263,19 +282,57 @@ text-transform: uppercase;
 }
 
 
+.nerd-img {
+  width: 360px;
+  height: 208px;
+  
+}
+
+.promo-table {
+  line-height: 24px;
+}
+
 .number {
   font-size: 45px;
   font-weight: 700;
+  line-height: 10px;
 }
 
-table.text {
+tr.text {
+  margin-top:15px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   width: 100px;
+  line-height: 18px;
+}
+
+td.text {
+  line-height: 18px;
+  
 }
 
 .link-partners {
   list-style: none;
+}
+
+.htmlacademy-img {
+  width: 260px;
+  height: 180px; 
+}
+
+.barberhop-img {
+  width: 260px;
+  height: 180px;
+}
+
+.pink-img {
+   width: 260px;
+  height: 180px;
+}
+
+.mishka-img {
+  width: 260px;
+  height: 180px;
 }
 
 .link-partners a {
@@ -308,7 +365,7 @@ table.text {
   border-radius: 5px;
   background-image: url(/img/comp.jpg);
   background-color: #fb565a;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -333,7 +390,7 @@ table.text {
   text-align: center;
   border-radius: 5px;
   background-color: #00ca74;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -358,7 +415,7 @@ table.text {
   text-align: center;
   border-radius: 5px;
   background-color: #efc849;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -382,6 +439,13 @@ table.text {
 .modal-window h2 {
   font-size: 45px;
   font-weight: 500;
+  line-height: 45px;
+}
+
+.popap-label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .modal.modal-write-to-us p {
@@ -443,22 +507,21 @@ input[type="submit"] {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 25px;
+  line-height: 30px;
 }
 
 .contacts p {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #989898;
+  color: #666666;
   margin-bottom: 35px;
 }
-
- 
 
 input[type="button"] {
   display:block;
   text-align: center;
-  color: white;
+  color: #ffffff;
   background-color: #fb565a;
   text-transform: uppercase;
   width: 220px;
@@ -471,16 +534,24 @@ input[type="button"] {
   border-radius: 3px;
 }
 
+.map-img {
+  width: 1280px;
+  height: 415px;
+  
+}
+
 .footer-lead b {
   font-size: 36px;
   font-weight: 700;
+  line-height: 36px;
   }
 
 .footer-lead span {
   display: block;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 500;
   color: #444444;
+  line-height: 22px;
 } 
 
 .social-link {
@@ -493,10 +564,27 @@ input[type="button"] {
 
 <!--catalog-->
 
+.logo-svg {
+  width: 160px;
+  height: 65px;
+}
+
+.site-navigation a {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.shopping-cart {
+  list-style: none;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .menu-catalog {
   display: block;
   margin-bottom: 0px;
-  
 }
 
 .page-title {
@@ -505,16 +593,14 @@ input[type="button"] {
   width: 1200px;
   height: 240px;
   background-color: #eeeeee;
-  
 }
-
-
 
 .page-title h1{
   font-size: 55px;
   text-align: center;
   vertical-align: inherit;
   background-color: #eeeeee;
+  line-height: 55px;
 }
 
 .type-of-grids {
@@ -523,13 +609,39 @@ input[type="button"] {
 }
 
 .type-of-grids legend {
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 30px;
+}
+
+.from-to-price {
+  color: #283136;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .sidebar h2 {
   font-size: 16px;
+}
+
+.filter-value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+
+.type-of-grids ul {
+  list-style: none;
+}
+
+.button-reveal {
+  line-height: 18px;
+  font-size: 16px;
+  background-color: #eeeeee;
+  
 }
 
 .filter-value li {
@@ -538,14 +650,28 @@ input[type="button"] {
   color: #797c7f;
 }
 
-.button-reveal {
-  background-color: #eeeeee; 
+input[type="submit"] {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  line-height: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #dfdfdf; 
+}
+
+input[type="submit"]:active {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  
 }
 
 .catalog-items {
   list-style: none;
   width: 760px;
-  height: 1920px;
 }
 
 .catalog-items li img {
@@ -560,22 +686,25 @@ input[type="button"] {
   background-color: #eeeeee;
   text-align: center;
   padding-top: 35px;
+  font-weight: 400;
+  line-height: 18px;
 }
-
 
 .catalog-items li h3 {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  line-height: 30px;
 }
 
 .catalog-item p {
+  font-weight: 400;
   margin-left: auto;
   margin-right: auto;
   color: #666666;
-  width: 180px;
+  width: 240px;
   height: 35px;
+  line-height: 18px;
 }
 
 .buy {
@@ -590,8 +719,13 @@ input[type="button"] {
   width: 200px;
   height: 35px;
   border-radius: 3px;
+  line-height: 18px;
 }
 
 .buy a {
   display: inline;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
+
