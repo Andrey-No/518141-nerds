@@ -766,7 +766,7 @@ input[type="submit"]:active {
 
 .paginator-item-current a {
   color: #000000;
-  border: 1 px  solid grey;
+  border: 1 px  solid green;
   background-color: #ffffff;
 }
 
