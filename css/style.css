@@ -541,12 +541,14 @@ input[type="button"] {
 }
 
 .footer-lead b {
+  width: 560px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   }
 
 .footer-lead span {
+  width: 560px;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -626,11 +628,34 @@ input[type="button"] {
   font-size: 16px;
 }
 
+.sidebar fieldset {
+  border: none;
+}
+
+.sidebar legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  list-style: none;
+  line-height: 20px;
+}
+
 .filter-value {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #283136;
+}
+
+.filter-value:hover + label {
   color: #000000;
+} 
+
+.filter-value:disabled + label {
+  color: #d2d3d3;
 }
 
 .type-of-grids ul {
@@ -729,3 +754,33 @@ input[type="submit"]:active {
   font-weight: 500;
 }
 
+.paginator-list li {
+  list-style: none;
+}
+
+.paginator-item a {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.paginator-item-current a {
+  color: #000000;
+  border: 1 px  solid grey;
+  background-color: #ffffff;
+}
+
+.paginator-item-current a:hover,
+.paginator-item-current a:focus,
+.paginator-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.paginator-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.paginator-item a:active {
+  background-color: #d5d5d5;
+}
