@@ -14,13 +14,13 @@
         <img src="img/logo.svg" width="160" height="65" alt="Логотип веб-студия Нёрдс">
       </div>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
+        <li><a href="#" class="active">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul>
-        <li class="cart"><a href="#">Корзина</a></li>
+      <ul class="shopping-cart">
+        <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
   </header>  
@@ -65,19 +65,19 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li class="advantages-item web">
-         <img src="img/comp.jpg" class="advantages-web" alt="Веб-сайты">
+         <img src="img/comp.jpg"  width="240" height="124" class="advantages-web" alt="Веб-сайты">
          <h3>Веб-сайты</h3>
          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
          <a href="#" class="red" >Заказать</a>
         </li>
        <li class="advantages-item applications">
-         <img src="img/item-applications.jpg" class="advantages-applications" alt="Приложения">
+         <img src="img/item-applications.jpg" width="300" height="146" class="advantages-applications" alt="Приложения">
          <h3>Приложения</h3>
          <p>Покорите топ-10 приложений в AppStore и Google Play.</p>
          <a href="#" class="green">Заказать</a>
        </li>
        <li class="advantages-item presentations">
-         <img src="img/item-presentations.jpg" class="advantages-presentations" alt="Презентации">
+         <img src="img/item-presentations.jpg" class="advantages-presentations" width="300" height="146" alt="Презентации">
          <h3>Презентации</h3>
          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
          <a href="#" class="yellow">Заказать</a>
@@ -147,7 +147,7 @@
       <input type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on" required>
       <p><label  class="popap-label" for="text-field">Текст письма:</label></p>
       <textarea class="textarea" name="text" id="text-field" placeholder="В свободной форме" rows="7" cols="76"></textarea><br>
-      <input type="submit" value="Отправить">
+      <button type="button" class="write-to-us-button" value="Отправить"><span class="send">Отправить</span></button>
       <span class="modal-close">X</span>
     </form>
   </section>
