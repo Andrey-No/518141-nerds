@@ -37,21 +37,29 @@
     <h2 class="visually-hidden">Содержание страницы</h2>
     <section class="sidebar">
      <form class="type-of-grids" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="filter-value">Стоимость</legend>
-          <h2 class="visually-hidden">Фильтр стоимость</h2>
-    <!-- Здесь будет фильтр по цене -->
-          
-          <label ><span class="from-to-price">ОТ</span><input type="number" min="0" max="15000" step="500" placeholder="0"></label><label><span class="from-to-price">ДО</span><input type="number" min="0" max="15000" step="500" placeholder="15000"></label>
-        </fieldset>
-        <fieldset>
+        <fieldset class="filter-item">
+        <legend class="cost">Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 5%; width: 65%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
           <legend class="filter-value">Сетка</legend>
           <h2 class="visually-hidden">Фильтр по типу сеток</h2>
     <!-- Здесь будет форма по сеткам -->
           <ul>
-            <li><label class="label-radio-filter"><input class="radio-filter" type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
-            <li><label class="label-radio-filter"><input type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
-            <li><label class="label-radio-filter"><input type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
+            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
+            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
+            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
           </ul>
         </fieldset>
         <fieldset>
