@@ -1338,9 +1338,6 @@ width: 270px;
   display: none;
 }
 
-.slider-item:nth-child(2) {
-  display: block;
-}
 
 .slider-item:nth-child(1) {
   display: block;
@@ -1359,18 +1356,6 @@ width: 270px;
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
-}
-
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
-  display: block;
-}
-
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
-  display: block;
-}
-
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
-  display: block;
 }
 
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
