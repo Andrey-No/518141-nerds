@@ -858,6 +858,7 @@ input[type="number"] {
 
 .sidebar {
   display: flex;
+  margin-right: 140px;
 }
 
 .content-catalog {
@@ -1091,21 +1092,49 @@ input[type="submit"]:active {
 
 .paginator-list li {
   list-style: none;
+  padding: 0px;
+  margin: 0 10px 0 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.paginator-item {
+  display: block;
+  background-color: #eeeeee;
+  text-align: center;
+  vertical-align: middle;
   width: 50px;
   height: 50px;
   border: 1px solid #eeeeee;
 }
 
-.paginator-item {
-  background-color: #eeeeee;
-  text-align: center;
-  vertical-align: center;
-}
-
 .paginator-item-current {
   background-color: #ffffff;
-  
 }
+
+.paginator-item-next {
+  width: 265px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.paginator-item-next {
+  display: block;
+}
+
+.paginator-item-next a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0;
+} 
 
 .paginator-item a {
   color: #000000;
