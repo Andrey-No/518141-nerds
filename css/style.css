@@ -881,10 +881,6 @@ input[type="number"] {
   border-radius: 50%;
 }
 
-.adaptive-label {
- 
-  
-}
 
 .radio-filter:checked + .adaptive-label::after {
   content: "";
@@ -909,7 +905,8 @@ input[type="number"] {
   border-radius: 50%;
 }
 
-<--!-->
+
+
 
 .feature-label {
   position: relative;
@@ -917,6 +914,13 @@ input[type="number"] {
   font-weight: 400;
   font-size: 16px;
   color: #283136;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #797c7f;
 }
 
 .feature-label::before {
@@ -924,27 +928,26 @@ input[type="number"] {
   position: absolute;
   left: 0;
   top: 0;
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/checkbox-off.svg);
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.4;
 }
 
-.feature-label {
-  display: block;
-  margin-bottom: 15px;
-  
-}
 
 .checkbox-filter:checked + .feature-label::after {
   content: "";
   position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 4px;
-  height: 4px;
-  border: 2px solid #a6a6a6;
-  background-color: #a6a6a6;
-  border-radius: 50%;
+  left: 1.6px;
+  top: 0px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.42;
 }
 
 .feature-label::after {
@@ -952,18 +955,13 @@ input[type="number"] {
   left: 0;
   top: 0;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #a6a6a6;
-  border-radius: 50%;
+  width: 27x;
+  height: 27px;
 }
-
-
 
 .content-catalog {
   display: flex;
 }
-
 
 .portfolio-filter {
   display: flex;
