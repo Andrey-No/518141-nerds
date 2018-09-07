@@ -53,20 +53,34 @@
           </div>
         </div>
       </fieldset>
+      <fieldset>
           <legend class="filter-value">Сетка</legend>
           <h2 class="visually-hidden">Фильтр по типу сеток</h2>
     <!-- Здесь будет форма по сеткам -->
           <ul>
-            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-adaptive" checked>Адаптивная</label></li>
-            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-fixed">Фиксированная</label></li>
-            <li><label class="label-radio-filter"><input class="indent-filter" type="radio" name="grid" value="grid-rubber">Резиновая</label></li>
+            <li class="radio-filter-type">
+              <input class="radio-filter visually-hidden" type="radio" id="id-adaptive" name="grid" value="grid-adaptive" checked>
+              <label class="adaptive-label" for="id-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input class="radio-filter visually-hidden" type="radio" id="id-fixed" name="grid" value="grid-adaptive" >
+              <label class="adaptive-label" for="id-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input class="radio-filter visually-hidden" type="radio" id="id-retina" name="grid" value="grid-adaptive" >
+              <label class="adaptive-label" for="id-retina">Резиновая</label>
+            </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend class="filter-value">Особенности</legend>
           <h2 class="visually-hidden">Фильтр - особенности</h2>
           <ul>
-            <li><label class="checkbox-filter"><input type="checkbox" name="slider" id="slider-field" checked>Слайдер</label></li>
+            <li>
+              
+                <input class="checkbox-filter visually-hidden"  type="checkbox" id="id-slider" name="slider" id="slider-field" checked>
+              <label class="feature-label" for="id-slider">Слайдер</label>
+            </li>
             <li><label class="checkbox-filter"><input type="checkbox" name="advantage" id="advantage-field">Блок преимуществ</label></li>
             <li><label class="checkbox-filter"><input type="checkbox" name="news" id="news-field" checked>Новости</label></li>
             <li><label class="checkbox-filter"><input type="checkbox" name="gallery" id="gallery-field">Галерея</label></li>
