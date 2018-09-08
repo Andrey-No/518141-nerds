@@ -201,7 +201,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  margin: 0 auto
+  margin: 0 auto;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -289,7 +289,7 @@ a {
 .advantages-item-image {
   width: 300px;
   height: 145px;
-  margin-bottom: 0 0 25px 0;
+  margin: 0 0 25px 0;
 }
 
 .advantages h3 {
@@ -602,6 +602,10 @@ td.number {
   font-weight: 400;
   line-height: 20px;
   color: #797c7f;
+}
+
+.checkbox-filter:disabled+label {
+  opacity: 0.4;
 }
 
 .checkbox-filter:hover {
@@ -923,6 +927,8 @@ input[type="number"] {
   color: #797c7f;
 }
 
+
+
 .feature-label::before {
   content: "";
   position: absolute;
@@ -937,7 +943,7 @@ input[type="number"] {
 }
 
 
-.checkbox-filter:checked + .feature-label::after {
+.checkbox-filter:checked + .feature-label::before {
   content: "";
   position: absolute;
   left: 1.6px;
@@ -950,14 +956,7 @@ input[type="number"] {
   opacity: 0.42;
 }
 
-.feature-label::after {
-  content: "";
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 27x;
-  height: 27px;
-}
+
 
 .content-catalog {
   display: flex;
@@ -1122,10 +1121,30 @@ input[type="submit"]:active {
   height: 620px;
 }
 
+.catalog-item {
+  position: relative;
+}
+
 .info-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.catalog-item:hover+.info-block {
   display: block;
-  width: 360px;
-  height: 230px;
+}
+
+.info-block {
+  display: none;
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 230px;
   background-color: #eeeeee;
   text-align: center;
   padding-top: 35px;
@@ -1265,10 +1284,6 @@ input[type="submit"]:active {
 
 .paginator-item a:active {
   background-color: #d5d5d5;
-}
-
-width: 270px;
-  margin: 50px auto; 
 }
 
 .range-filter {
