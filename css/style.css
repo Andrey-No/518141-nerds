@@ -925,9 +925,12 @@ input[type="number"] {
   font-weight: 400;
   line-height: 20px;
   color: #797c7f;
+  opacity: 1;
 }
 
-
+.feature-label:hover::before {
+  opacity: 1;
+}
 
 .feature-label::before {
   content: "";
@@ -1133,15 +1136,18 @@ input[type="submit"]:active {
   display: none;
 }
 
-.catalog-item:hover+.info-block {
+.catalog-item:hover .info-block {
   display: block;
+}
+
+.info-block + .img-header:hover  {
+  background-color: #4d4d4d;
 }
 
 .info-block {
   display: none;
   position: absolute;
   left: 0;
-  top:0;
   bottom: 0;
   right: 0;
   min-height: 230px;
@@ -1150,6 +1156,33 @@ input[type="submit"]:active {
   padding-top: 35px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.img-header {
+  display: flex;
+  align-items: center;
+  top: 0;
+  background-color: #e9e9e9;
+  width: 360px;
+  height: 40px;
+  border-radius: 5px 5px 0px 0px; 
+}
+
+.img-header:hover {
+  background-color: #4d4d4d;
+}
+
+.circle {
+  display: block;
+  padding: 0px;
+  margin: 0 1px 0 15px;
+  justify-content: space-between;
+  width: 15px;
+ height: 15px;
+ background: #ffffff;
+ -moz-border-radius: 50px;
+ -webkit-border-radius: 50px;
+ border-radius: 50px;
 }
 
 .catalog-items li h3 {
@@ -1218,14 +1251,23 @@ input[type="submit"]:active {
   font-weight: 500;
 }
 
+
+.paginator-list {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
 .paginator-list a {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 0;
-  margin-left: 0;
-  
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
 }
+
 
 .paginator-item {
   display: block;
@@ -1235,6 +1277,11 @@ input[type="submit"]:active {
   width: 50px;
   height: 50px;
   border: 1px solid #eeeeee;
+}
+
+.paginator-item:hover {
+  background-color: #dfdfdf;
+  
 }
 
 .paginator-item-current {
@@ -1252,37 +1299,11 @@ input[type="submit"]:active {
   text-transform: uppercase;
 }
 
-.paginator-item-next a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0;
-  margin-left: 0;
-} 
-
-.paginator-item a {
-  color: #000000;
-  text-align: center;
-  background-color: #eeeeee;
-}
-
-.paginator-item-current a {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.paginator-item-current a:hover,
-.paginator-item-current a:focus,
-.paginator-item-current a:active {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.paginator-item a:hover {
+.paginator-list li:hover {
   background-color: #dfdfdf;
 }
 
-.paginator-item a:active {
+.paginator-list li:active {
   background-color: #d5d5d5;
 }
 
