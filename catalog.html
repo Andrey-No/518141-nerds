@@ -12,19 +12,21 @@
   <header class="menu-header">
     <nav class="menu-navigator">
       <div class="menu-header-logo">
-        <a href="index.html"><img src="img/logo.svg" class="logo-svg" width="160" height="65" alt="Логотип веб-студия Нёрдс"></a>
+        <img src="img/logo.svg" class="logo-img" width="160" height="65" alt="Логотип веб-студия Нёрдс">
       </div>
       <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
+        <li><a href="index.html" >Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="#" active>Магазин</a></li>
+        <li><a href="catalog.html" class="current">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="shopping-cart">
-        <li><a href="#">Корзина</a></li>
+        <li>
+          <a class="cart" href="#">Корзина</a>
+        </li>
       </ul>
     </nav>
-  </header>
+  </header>  
 </div>
 <main>
   <section class="page-title ">
@@ -104,8 +106,8 @@
     <h2 class="visually-hidden">Каталог работ</h2>
     <nav class="portfolio-filter">
       <!--Фильтр по портфолио -->
-      <ul>
-        <li class="sort">Сортировать:</li>
+      <ul class="sort">
+        <li >Сортировать:</li>
       </ul>
       <ul class="filter-type">
         <li class="activ"><a href="#">По цене</a></li>
@@ -221,9 +223,9 @@
       </div>
       <div class="wrapper-footer">
         <ul class="social-link">
-          <li><a href="#" class="social social-vk">Вконтакте</a></li>
-          <li><a href="#" class="social social-fb">Facebook</a></li>
-          <li><a href="#" class="social social-inst">Instagram</a></li>
+          <li><a href="#" class="social social-vk"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#" class="social social-fb"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="social social-inst"><span class="visually-hidden">Instagram</span></a></li>
           </ul>
         <p class="footer-lead">
           <b>Давайте дружить, это выгодно!</b>
@@ -232,7 +234,7 @@
       </div>
     </footer>
   </div>
-  <section class="modal-window ">
+  <section class="modal-window visually-hidden">
     <form class="modal modal-write-to-us" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
       <p><label class="popap-label" for="name-field">Ваше имя</label></p>
