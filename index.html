@@ -20,7 +20,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="shopping-cart">
-        <li><a href="#">Корзина</a></li>
+        <li>
+          <a class="cart" href="#">Корзина</a>
+        </li>
       </ul>
     </nav>
   </header>  
@@ -93,7 +95,7 @@
         Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
         <b>Выполняем заказы на разработку:</b>
-        <ul>
+        <ul class="products">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -107,24 +109,36 @@
         <table class="promo-table">
           <tr class="number">
             <td>
-              146%
+              146<span class="percent-sign">%</span>
+            </td>
+            <td class="spacer">
             </td>
             <td>
-              100%
+              100<span class="percent-sign">%</span>
+            </td>
+            <td class="spacer">
             </td>
             <td>
-              50%
+              50<span class="percent-sign">%</span>
+            </td>
+            <td class="spacer">
             </td>
           </tr>
           <tr class="text">
             <td>
               Уровень самоотдачи
             </td>
+            <td class="spacer">
+            </td>
             <td>
               Соблюдение сроков
             </td>
+            <td class="spacer">
+            </td>
             <td>
               Минимальная предоплата
+            </td>
+            <td class="spacer">
             </td>
           </tr>
         </table>
@@ -173,9 +187,9 @@
       </div>
       <div class="wrapper-footer">
         <ul class="social-link">
-          <li><a href="#" class="social social-vk">Вконтакте</a></li>
-          <li><a href="#" class="social social-fb">Facebook</a></li>
-          <li><a href="#" class="social social-inst">Instagram</a></li>
+          <li><a href="#" class="social social-vk "><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#" class="social social-fb"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#" class="social social-inst"><span class="visually-hidden">Instagram</span></a></li>
           </ul>
         <p class="footer-lead">
           <b>Давайте дружить, это выгодно!</b>

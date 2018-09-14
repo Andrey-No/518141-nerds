@@ -10,13 +10,36 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .menu-header {
   background-color: #eeeeee;
   margin: 0 auto;
 }
 
 .menu-header-logo {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 24px;
 }
 
 .wrapper {
@@ -30,6 +53,8 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
+
 
 .content-catalog {
   display: flex;
@@ -53,6 +78,25 @@ body {
   border-radius: 3px;
   border: none;
 }
+
+.slider-item a {
+  display: block;
+  box-sizing: border-box;
+  width: 235px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+  
+}
+
+
 
 .button:hover,
 .button:focus {
@@ -147,7 +191,7 @@ body {
 
 .slider-item p {
   max-width: 430px;
-  margin: 0;
+  margin: 0 0 0 -4px;
   margin-bottom: 38px;
 }
 
@@ -218,14 +262,21 @@ a {
 
 .site-navigation  {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 885px;
   align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .site-navigation a {
-  padding: 0 50px 0 0;
+  display: block;
+  padding: 0 46px 0 0;
+  vertical-align: middle;
 }
 
 .site-navigation a:hover {
@@ -242,6 +293,9 @@ a {
 
 .cart {
   list-style: none;
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0px 0 0 20px;
 }
 
 .shopping-cart a {
@@ -269,6 +323,7 @@ a {
 
 .advantages {
   background-color: white;
+  
 }
 
 .advantages-content {
@@ -279,6 +334,7 @@ a {
   margin: 0 auto;
   padding: 0px;
   padding-top: 80px;
+  border-bottom: 3px solid #eeeeee;
 }
 
 .advantages li {
@@ -302,7 +358,7 @@ a {
 .advantages-item-image {
   width: 300px;
   height: 145px;
-  margin: 0 0 25px 0;
+  margin: 0px 0px 25px 4px;
 }
 
 .advantages h3 {
@@ -311,7 +367,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   padding: 0;
-  margin: 0px;
+  margin: -7px 0 0 0;
   }
 
 .advantages p {
@@ -375,6 +431,19 @@ a {
   
 }
 
+.about-us-statistics {
+  margin: 40px 0 0 0;
+}
+
+.about-us-nerd-image {
+  margin: 0 0 40px 0;
+  
+}
+
+.percent-sign {
+  font-size: 22px;
+}
+
 .about-us-statistics b {
   display: block;
   font-size: 16px;
@@ -388,6 +457,27 @@ a {
   margin-bottom: 75px;
 }
 
+.products {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 30px 0 0 0;
+  padding: 0 0 0 35px;
+  width: 440px;
+  height: 150px;
+}
+
+.products::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid red;
+  
+  top: 0;
+  left: 0;
+  
+}
+
 
 .nerd-img {
   width: 360px;
@@ -398,6 +488,10 @@ a {
   display: flex;
   justify-content: space-between;
   line-height: 24px;
+}
+
+.spacer {
+  min-width: 20px;
 }
 
 .number {
@@ -811,6 +905,7 @@ input[type="number"] {
 
 .social-link {
    display: flex;
+  list-style: none;
   justify-content: flex-start;
   border-radius: 50%;
 }
@@ -875,7 +970,9 @@ input[type="number"] {
   height: 65px;
 }
 
-
+.menu-header-logo {
+  min-width: 160px;
+}
 
 .site-navigation a {
   line-height: 30px;
@@ -884,11 +981,34 @@ input[type="number"] {
 }
 
 .shopping-cart {
+  display: flex;
+  
+  max-width: 120px;
+  height: 20px;
   list-style: none;
   line-height: 30px;
   font-size: 16px;
   font-weight: 500;
-  margin-right: 20px;
+}
+
+.shopping-cart .cart {
+  position: relative;
+  padding-left: 40px;
+}
+
+.cart::before {
+  content: "";
+  
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position:  0 0;
+  
 }
 
 .menu-catalog {
@@ -1590,9 +1710,7 @@ input[type="submit"]:active {
 
 .slider-item h3 {
   max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
-  
+  margin: -7px 0 27px 0px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -1600,7 +1718,6 @@ input[type="submit"]:active {
 
 .slider-item p {
   max-width: 430px;
-  margin: 0;
-  margin-bottom: 38px;
+  margin: 0px 0px 38px 1px;
 }
 
