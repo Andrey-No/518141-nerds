@@ -278,6 +278,7 @@ a {
 .menu-navigator {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
@@ -1019,19 +1020,20 @@ input[type="number"] {
   line-height: 30px;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 9px;
 }
 
 .shopping-cart .cart {
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .cart::before {
   content: "";
   
   position: absolute;
-  top: 2px;
-  left: 10px;
+  top: 4px;
+  left: -10px;
   width: 18px;
   height: 18px;
   
@@ -1179,6 +1181,7 @@ input[type="number"] {
 
 .content-catalog {
   display: flex;
+  margin: 0 auto;
 }
 
 .portfolio-filter {
