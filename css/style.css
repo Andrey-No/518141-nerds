@@ -40,6 +40,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .menu-header-logo {
@@ -114,12 +115,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.container {
-  width: 1440px;
-  margin: 0 0 0 0;
-  padding: 0px;
-  box-sizing: border-box;
-}
+
 
 .cont {
   background-color: #eeeeee;
@@ -280,7 +276,7 @@ a {
   box-sizing: border-box;
   align-items: center;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 0 0 -77px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1824,13 +1820,13 @@ input[type="submit"]:active {
 
 .slider {
   position: relative;
-  
+  margin: 0 -7px -1px -161px;
   background-color: #eeeeee;
 }
 
 .slider-controls {
   position: absolute;
-  left: 718px;
+  left: 881px;
   bottom: 104px;
   z-index: 100;
   
@@ -1871,7 +1867,7 @@ input[type="submit"]:active {
 }
 
 .slider-list {
-  margin: 0;
+  margin: 0 0 0 -25px;
   padding: 0 0 0 50px;
   
   list-style: none;
