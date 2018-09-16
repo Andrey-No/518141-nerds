@@ -15,11 +15,6 @@ img {
   height: auto;
 }
 
-.current {
-  border-bottom: 3px solid #fb565a;
-  
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -1116,6 +1111,11 @@ input[type="number"] {
   padding: 7px 36px 0 24px;
 }
 
+.current {
+  border-bottom: 3px solid #red;
+  
+}
+
 .shopping-cart {
   display: flex;
   
@@ -1177,7 +1177,7 @@ input[type="number"] {
   vertical-align: inherit;
   background-color: #eeeeee;
   line-height: 55px;
-  margin: 0px;
+  margin: -17px 0px 0 0;
   padding: 0px;
  
 }
@@ -1294,6 +1294,7 @@ input[type="number"] {
   justify-content: space-between;
   width: 760px;
   padding: 0px;
+  margin: -19px 0 46px -37px;
 }
 
 .filter-type {
@@ -1373,6 +1374,7 @@ input[type="number"] {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
+  margin: 0-0 1px 4px;
 }
 
 .from-to-price {
@@ -1387,15 +1389,15 @@ input[type="number"] {
 
 .sidebar fieldset {
   border: none;
-  margin: 0;
-  padding: 30px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .sidebar legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: -0-0 -0 -24px;
 }
 
 .sidebar ul {
@@ -1433,7 +1435,7 @@ input[type="number"] {
 .portfolio-filter ul {
   list-style: none;
   position: relative;
-
+  margin: 15px 0px 7px 43px;
 }
 
 .portfolio-filter ul::before {
@@ -1509,9 +1511,10 @@ input[type="submit"]:active {
   padding: 0;
 }
 
-.catalog-items li img {
+.catalog-items img {
   width: 360px;
-  height: 620px;
+  height: 580px;
+  margin: 0 0px 0 7px;
 }
 
 .catalog-item {
@@ -1552,7 +1555,9 @@ input[type="submit"]:active {
 .img-header {
   display: flex;
   align-items: center;
-  top: 0;
+  position: absolute;
+  top: -3px;
+  left: 7px;
   background-color: #e9e9e9;
   width: 360px;
   height: 40px;
@@ -1561,6 +1566,10 @@ input[type="submit"]:active {
 
 .img-header:hover {
   background-color: #4d4d4d;
+}
+
+.catalog-web {
+  margin: 0 0 0 -165px;
 }
 
 .circle {
@@ -1728,12 +1737,13 @@ input[type="submit"]:active {
   height: 41px;
   margin-bottom: 15px;
   padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 43px;
+  padding-left: 13px;
   
   background-color: #f1f1f1;
   
   border-radius: 5px;
+  margin: -3px 4px 18px 13px;
 }
 
 .range-controls .scale {
@@ -1783,6 +1793,7 @@ input[type="submit"]:active {
   
   font-size: 16px;
   text-transform: uppercase;
+  margin: 0 0 0 5px;
 }
 
 .price-controls input {
