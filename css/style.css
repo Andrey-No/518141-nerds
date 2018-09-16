@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  max-width: 100%;
 }
 
 img {
@@ -36,11 +37,15 @@ input[type="radio"].visually-hidden {
 .menu-header {
   background-color: #eeeeee;
   margin: 0 auto;
+  width: 100%;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .menu-header-logo {
@@ -50,13 +55,10 @@ input[type="radio"].visually-hidden {
 .wrapper {
   margin: 0 auto;
   background-color: #eeeeee;
-  
 }
 
 .menu-navigator {
   padding-top: 50px;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 
@@ -136,7 +138,6 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   display: none;
-  width: 1200px;
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 80px;
@@ -224,7 +225,6 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
 }
 
 .slider-controls i::after {
@@ -275,8 +275,6 @@ a {
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-  width: 1200px;
-  margin: 0 0 0 -77px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -353,8 +351,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 1158px;
-  height: 400px;
   margin: 0 auto;
   padding: 0px;
   padding-top: 80px;
@@ -668,8 +664,6 @@ td.number {
 }
 
 .partners {
-  margin: 0 auto;
-  width: 1200px;
   margin-bottom: 56px;
   padding-bottom: 1px;
 }
@@ -687,7 +681,6 @@ td.number {
 
 .map-img {
   padding: 0;
-  margin: -18px 0 0 0;
   
 }
 
@@ -893,13 +886,17 @@ input[type="number"] {
 
 .wrapper-footer {
   margin: 0 auto;
-  
+}
+
+.link-footer {
+  display: flex;
+  justify-content: space-around;
 }
 
 .map {
   position: relative;
   margin: 0 0 40px 0;
-  width: 1450px;
+  width: 100%;
 }
 
 .contacts {
@@ -988,7 +985,7 @@ input[type="number"] {
 }
 
 .map-img {
-  width: 1437px;
+  width: 100%;
   height: 415px;
 }
 
@@ -1082,7 +1079,6 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1426px;
   margin: 0 -1px 0 4px;
 }
 
@@ -1820,13 +1816,14 @@ input[type="submit"]:active {
 
 .slider {
   position: relative;
-  margin: 0 -7px -1px -161px;
   background-color: #eeeeee;
 }
 
 .slider-controls {
   position: absolute;
-  left: 881px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   bottom: 104px;
   z-index: 100;
   
@@ -1835,7 +1832,6 @@ input[type="submit"]:active {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
 }
 
 .slider-controls label {
@@ -1867,7 +1863,7 @@ input[type="submit"]:active {
 }
 
 .slider-list {
-  margin: 0 0 0 -25px;
+  margin: 0 0 0 0;
   padding: 0 0 0 50px;
   
   list-style: none;
