@@ -38,6 +38,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.container {
+  width: 1200px;
+}
+
 .menu-header-logo {
   padding: 0 0 0 24px;
 }
@@ -477,7 +481,7 @@ a {
 }
 
 .about-us-statistics {
-  margin: 40px 0 0 0;
+  margin: 40px 245px 0px 0px;
 }
 
 .about-us-nerd-image {
@@ -1083,7 +1087,7 @@ input[type="number"] {
   justify-content: space-between;
   align-items: center;
   width: 1426px;
-  margin-bottom: 40px;
+  margin: 0 -1px 0 4px;
 }
 
 .footer-lead {
@@ -1100,6 +1104,8 @@ input[type="number"] {
 .menu-header-logo {
   min-width: 160px;
 }
+
+
 
 .site-navigation a {
   line-height: 30px;
@@ -1824,7 +1830,7 @@ input[type="submit"]:active {
 
 .slider-controls {
   position: absolute;
-  left: 796px;
+  left: 718px;
   bottom: 104px;
   z-index: 100;
   
